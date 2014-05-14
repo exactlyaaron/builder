@@ -1,0 +1,10 @@
+.tree-wrapper
+  .tree(data-id=tree._id.toString(), class=treeHelper.getClass(tree.height), class=tree.isHealthy ? 'alive' : 'dead',class=tree.isChopped ? 'stump' : 'normal')
+  .stats
+    .height Height: #{tree.height} in.
+    .health= tree.isHealthy ? 'healthy' : 'plagued'
+  if(tree.isHealthy && tree.height > 48)
+    button.chop
+      img(src='/img/axe.svg')
+      
+  //- (class=tree.height < 48 ? 'hidden' : 'visible', class=tree.isHealthy ? 'visible' : 'hidden')

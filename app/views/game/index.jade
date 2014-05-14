@@ -1,0 +1,36 @@
+extends ../shared/template
+
+block content
+  h1.inline Deku Farm
+
+  form.inline
+    input(type='text', name='username', placeholder='Username')
+    button#login Login
+
+  .clear
+
+  #user-info
+
+    p.inline USER:
+    #username.inline User
+
+    p.inline LUMBER:
+    #lumber.inline 0
+
+    p.inline CASH:
+    #cash.inline 0
+
+    .clear
+
+  button#seed Plant Seed
+  button#getforest Get Forest
+  button#selllumber Sell All Lumber
+  form#sellwood.inline
+    input#woodamount(type='text', name='wood', placeholder='#logs to sell')
+    button#sellwood Sell Wood
+
+  #forest
+
+
+block scripts
+  script(src='/js/es6/compiled/game.js')

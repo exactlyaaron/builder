@@ -1,0 +1,158 @@
+body {
+  background-color: #21550e;
+  color:#eee;
+}
+
+*:focus {
+  outline:none;
+}
+
+h1 {
+  margin-right:20px;
+}
+
+.clear {
+  clear:both;
+  width:100%;
+}
+
+.inline {
+  display:inline-block;
+}
+
+.hidden {
+  display:none !important;
+}
+
+.visible {
+  display:block
+}
+
+input, button {
+  padding: 8px;
+  color:#333;
+  border:none;
+  margin:5px;
+  font-size:13px;
+  border-radius:2px;
+}
+
+input:focus {
+  outline:none;
+  border-bottom: solid 3px #5f9419;
+}
+
+button {
+  background-color:#1b390c;
+  padding:10px 20px;
+  color:#eee;
+  border-bottom: 3px solid #306e11;
+}
+
+button:hover {
+  background-color:#162907;
+}
+
+#container {
+  width:75%;
+  margin:0 auto;
+}
+
+#user-info {
+  padding:15px;
+  background-color:#5f9419;
+  border-radius:2px;
+  margin-bottom:10px;
+  border-bottom: 3px solid #79aa19;
+  color:#fff;
+
+  p {
+    margin: 0 10px 0 0;
+    font-size: 13px;
+  }
+
+  #username, #lumber, #cash {
+    background-color:#fff;
+    border-radius: 2px;
+    margin-right:25px;
+    color:#333;
+    padding:10px 20px;
+  }
+}
+
+.tree-wrapper{
+  display:inline-block;
+  margin:5px;
+}
+
+.tree {
+  width: 80px;
+  height: 80px;
+  background-size:cover;
+  padding:5px;
+  border: 1px solid #1b390c;
+  position:relative;
+  border-radius:2px;
+}
+
+form.chopform {
+  width:20px;
+  height:20px;
+}
+
+button.chop {
+  width:20px;
+  height:20px;
+  padding:0;
+  margin:0;
+  float:right;
+  border:none;
+  background-color:#222;
+
+  img {
+    width:20px;
+    height:auto;
+  }
+}
+
+.stats {
+  padding:3px;
+  font-size:9px;
+  border-right:1px solid #1b390c;
+  border-left:1px solid #1b390c;
+  border-bottom:1px solid #1b390c;
+  background-color:#333;
+  position:relative;
+  border-radius:2px;
+
+
+  .height, .health {
+    padding:5px 3px;
+
+  }
+}
+
+.seed {
+  background-image:url(/img/seed.jpg);
+}
+
+.sapling {
+  background-image:url(/img/sapling.jpg);
+}
+
+.treenager {
+  background-image:url(/img/treenager.jpg);
+}
+
+.adult {
+  background-image:url(/img/adult.jpg);
+}
+
+.dead {
+  opacity: 0.5;
+  background-image:url(/img/dead.jpg);
+
+  .tree {
+
+  }
+}
